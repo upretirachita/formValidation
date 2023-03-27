@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation App</title>
+    <link rel="stylesheet" href="./src/mystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="container">
+    <div class="content" id="content">
+    </div>
+    <form id="form" name="submit-to-google-sheet">
+        <div class="social" id="social">
+            
+        </div>
+        <!-- 
+            /**
+            *!user input 
+        **/-->
+        <div>
+            <label for="username">User Name:</label>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" 
+                    name="username" 
+                    id="username" 
+                    placeholder="Enter Your Name">
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+        </div>
+        <!-- 
+            /**
+            *!email input 
+        **/-->
+        <div>
+            <label for="email">Email:</label>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="abc@xyz.fi">
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+        </div>
+        <!-- 
+            /**
+            *!password 
+        **/-->
+        <div>
+            <label for="password">Password:</label>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" 
+                    name="password" 
+                    id="password" 
+                    placeholder="Enter Your Password">
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+            
+            <label for="password-conform">Conform your Password:</label>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" 
+                    name="password-conform" 
+                    id="password-conform" 
+                    placeholder="Conform your Password">
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+        <span id="form-send-msg"></span>
+    </form>
+    
+</div>
+    
+</body>
+<script src="./src/myscript.js"></script>
+</html>
