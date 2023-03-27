@@ -110,7 +110,7 @@ formConfirmation = () => {
 }
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxpOInNUbg6B569HRuJZCWqf14EP-ks12SEK9juBfTmjKNUDoELecfS-SelFVJnqqsI/exec'
+const scriptURL = 'getYourOwnURLFromGoogleSheet'
 const form = document.forms['submit-to-google-sheet']
 
 let formSubmission = () =>{
